@@ -45,9 +45,26 @@ a {
   text-decoration: none;
   color: var(--primary-black);
 }
+.underline {
+  width: 53px;
+  height: 4px;
+  background-color: var(--primary-black);
+  border-radius: 2px;
+  position: relative;
+  top: 17px;
+  opacity: 0;
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--secondary-blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover .underline,
+.header-link:focus .underline {
+  background-color: var(--secondary-blue);
+  opacity: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-active {
@@ -77,6 +94,8 @@ a {
 .header-contact-element:focus {
   color: var(--secondary-blue);
   fill: var(--secondary-blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact {
@@ -116,6 +135,9 @@ a {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .img-title {
   font-family: "Roboto";
@@ -340,6 +362,7 @@ figure:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container-images figcaption {
   padding-left: 24px;
@@ -385,6 +408,8 @@ figure:focus {
   fill: white;
   background-color: var(--secondary-blue);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fourth-section {
   padding-left: 0;
@@ -424,6 +449,8 @@ figure:focus {
   fill: var(--secondary-blue);
   border-color: var(--secondary-blue);
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-us-container {
   display: flex;
@@ -458,4 +485,120 @@ figure:focus {
 .join-us-social-button:focus {
   background-color: var(--secondary-blue);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* OKNO MODALNE */
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+.modal-window {
+  height: 581px;
+  width: 528px;
+  background: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.close-window-x {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: none;
+  padding: 0;
+}
+.close-window-x svg {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.close-window-x:hover,
+.close-window-x:focus {
+  cursor: pointer;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.overlay-text {
+  width: 370px;
+  height: 70px;
+  position: relative;
+  background: rgba(47, 48, 58, 0.8);
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutusimg-container {
+  width: 370px;
+  height: 294px;
+}
+.aboutusimg-container img {
+  width: 370px;
+  height: 294px;
+  display: block;
+  float: up;
+}
+.overlay-text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.portfolio-image-overlay {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-image-overlay span {
+  width: 301px;
+  height: 196px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.portfolio-image img {
+  display: block;
+  float: up;
+}
+.portfolio-image:hover .portfolio-image-overlay,
+.portfolio-image:focus .portfolio-image-overlay {
+  transform: translateY(-100%);
+  opacity: 1;
+  visibility: visible;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-image {
+  border: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }

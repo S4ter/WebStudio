@@ -24,11 +24,25 @@
         <a class="logo" href="index.html"><span>Web</span>Studio</a>
         <div class="header-container-left">
           <ul class="navigator-container">
-            <li><a class="header-link" href="/agency">Agencja</a></li>
             <li>
-              <a class="header-link" href="portfolio.html">Portfolio</a>
+              <a class="header-link" href="/agency"
+                ><span>Agencja</span>
+                <div class="underline"></div
+              ></a>
             </li>
-            <li><a class="header-link" href="/contact">Kontakt</a></li>
+
+            <li>
+              <a class="header-link" href="portfolio.html"
+                ><span>Portfolio</span>
+                <div class="underline"></div
+              ></a>
+            </li>
+            <li>
+              <a class="header-link" href="/contact"
+                ><span>Kontakt</span>
+                <div class="underline"></div
+              ></a>
+            </li>
           </ul>
         </div>
         <div class="header-container-right">
@@ -56,7 +70,7 @@
       <main>
         <div class="main-header-box section">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button">Zamów usługe</button>
+          <button type="button" data-modal-open>Zamów usługe</button>
         </div>
 
         <ul class="first-section section">
@@ -96,24 +110,33 @@
         <div class="second-section section">
           <h2>Czym się zajmujemy</h2>
           <div class="second-section-images">
-            <img
-              src="images/aboutusimg1.jpg"
-              alt="Writing code"
-              width="370"
-              height="294"
-            />
-            <img
-              src="images/aboutusimg2.jpg"
-              alt="UI designs"
-              width="370"
-              height="294"
-            />
-            <img
-              src="images/aboutusimg3.jpg"
-              alt="Color palettee"
-              width="370"
-              height="294"
-            />
+            <div class="aboutusimg-container">
+              <img
+                src="images/aboutusimg1.jpg"
+                alt="zdjęcie pokazujące programistę piszącego kod z adnotacją aplikacje komputerowe"
+                width="370"
+                height="294"
+              />
+              <div class="overlay-text"><span>aplikacje komputerowe</span></div>
+            </div>
+            <div class="aboutusimg-container">
+              <img
+                src="images/aboutusimg2.jpg"
+                alt="Zdjęcie pokazujące tworzenie interfejsu użytkownika z adnotacją aplikacje mobilne"
+                width="370"
+                height="294"
+              />
+              <div class="overlay-text"><span>aplikacje mobilne</span></div>
+            </div>
+            <div class="aboutusimg-container">
+              <img
+                src="images/aboutusimg3.jpg"
+                alt="zdjęcie pokazujące palete kolorów z adnotacją rozwiązania graficzne"
+                width="370"
+                height="294"
+              />
+              <div class="overlay-text"><span>rozwiązania graficzne</span></div>
+            </div>
           </div>
         </div>
 
@@ -349,6 +372,15 @@
             </li>
           </ul>
         </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-window">
+            <button type="button" class="close-window-x" data-modal-close>
+              <svg width="18px" height="18px">
+                <use href="images/icons.svg#icon-close-button"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </main>
       <footer class="footer-container">
         <div class="footer-content">
@@ -410,5 +442,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
