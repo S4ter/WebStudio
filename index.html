@@ -2,7 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>Zadanie domowe nr 5</title>
+    <title>Zadanie domowe nr 6</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -379,6 +379,43 @@
                 <use href="images/icons.svg#icon-close-button"></use>
               </svg>
             </button>
+            <div class="order-form-container">
+              <p class="order-form-header">
+                Zostaw swoje dane w formularzu poniżej
+              </p>
+              <form class="order-form">
+                <label>
+                  <span class="label-text">Imie</span>
+                  <input type="text" name="userName" />
+                </label>
+                <label>
+                  <span class="label-text">Telefon</span>
+                  <input type="tel" name="telephone" />
+                </label>
+                <label>
+                  <span class="label-text">Email</span>
+                  <input type="email" name="orderUserEmail" />
+                </label>
+                <label>
+                  <span class="label-text">Komentarz</span>
+                  <textarea
+                    name="feedback"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </label>
+                <div class="rules-pp-accept-container">
+                  <p class="rules-pp-accept">
+                    Oświadczam iż akceptuje
+                    <a class="rules-highlight" href="rules">Regulamin</a> i
+                    <a class="rules-highlight" href="privacypolicy"
+                      >Politykę Prywatności</a
+                    >
+                  </p>
+                </div>
+                <button type="submit" class="order-form-button">Wyślij</button>
+              </form>
+            </div>
           </div>
         </div>
       </main>
@@ -438,6 +475,25 @@
                 </button>
               </a>
             </div>
+          </div>
+          <div class="signup-newsletter-container">
+            <form name="newsletterSignup" autocomplete="on">
+              <label>
+                <p>Zapisz się do newslettera</p>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="email-input"
+                />
+              </label>
+              <button type="submit" class="signup-newsletter-button">
+                Zapisz się
+                <svg width="24px" height="24px">
+                  <use href="images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </footer>
