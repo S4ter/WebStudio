@@ -379,24 +379,29 @@
                 <use href="images/icons.svg#icon-close-button"></use>
               </svg>
             </button>
-            <div class="order-form-container">
+            <!-- <div class="order-form-container">
+
               <p class="order-form-header">
                 Zostaw swoje dane w formularzu poniżej
               </p>
               <form class="order-form">
-                <label>
+                <label class="order-form-label">
                   <span class="label-text">Imie</span>
-                  <input type="text" name="userName" />
+                  <input type="text" name="userName" class="text-input" />
                 </label>
-                <label>
+                <label class="order-form-label">
                   <span class="label-text">Telefon</span>
-                  <input type="tel" name="telephone" />
+                  <input type="tel" name="telephone" class="text-input" />
                 </label>
-                <label>
+                <label class="order-form-label">
                   <span class="label-text">Email</span>
-                  <input type="email" name="orderUserEmail" />
+                  <input
+                    type="email"
+                    name="orderUserEmail"
+                    class="text-input"
+                  />
                 </label>
-                <label>
+                <label class="order-form-label">
                   <span class="label-text">Komentarz</span>
                   <textarea
                     name="feedback"
@@ -404,18 +409,82 @@
                     placeholder="Wprowadź tekst"
                   ></textarea>
                 </label>
-                <div class="rules-pp-accept-container">
-                  <p class="rules-pp-accept">
-                    Oświadczam iż akceptuje
-                    <a class="rules-highlight" href="rules">Regulamin</a> i
-                    <a class="rules-highlight" href="privacypolicy"
-                      >Politykę Prywatności</a
-                    >
-                  </p>
-                </div>
+                <label class="rules-pp-accept-container">
+                  <input type="checkbox" class="rules-pp-accept" />
+                  Oświadczam iż akceptuje
+                  <a class="rules-highlight" href="rules">Regulamin</a> i
+                  <a class="rules-highlight" href="privacypolicy"
+                    >Politykę Prywatności</a
+                  >
+                </label>
                 <button type="submit" class="order-form-button">Wyślij</button>
               </form>
-            </div>
+            </div> -->
+            <form name="orderForm" class="order-form-containter">
+              <h2>Zostaw swoje dane w formularzu poniżej</h2>
+              <ul class="rules-accept-box">
+                <li>
+                  <p>Imie</p>
+                  <input
+                    id="name"
+                    type="text"
+                    name="UserRealName"
+                    class="order-info"
+                  />
+                  <label for="name"></label>
+                </li>
+                <li>
+                  <p>Email</p>
+                  <input
+                    id="userEmail"
+                    type="email"
+                    name="UserRealName"
+                    class="order-info"
+                  />
+                  <label for="userEmail"></label>
+                </li>
+                <li>
+                  <p>Telefon</p>
+                  <input
+                    id="userTelephone"
+                    type="tel"
+                    name="UserTelephone"
+                    class="order-info"
+                  />
+                  <label for="userTelephone"></label>
+                </li>
+                <li class="user-feedback-box">
+                  <p>Komentarz</p>
+                  <textarea
+                    id="userFeedback"
+                    name="feedback"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                    class="order-info-textarea"
+                  ></textarea>
+                  <label for="userFeedback"></label>
+                </li>
+                <li>
+                  <input
+                    id="rules-accept"
+                    type="checkbox"
+                    name="rulesAcceptCheckbox"
+                    value="true"
+                    class="rules-checkbox"
+                  />
+                  <label for="rules-accept"
+                    ><span class="rules-information"
+                      >Oświadczam iż akceptuje
+                      <a class="rules-highlight" href="rules">Regulamin</a> i
+                      <a class="rules-highlight" href="privacypolicy"
+                        >Politykę Prywatności</a
+                      ></span
+                    ></label
+                  >
+                </li>
+              </ul>
+              <button type="submit" class="order-form-button">Wyślij</button>
+            </form>
           </div>
         </div>
       </main>
