@@ -379,58 +379,22 @@
                 <use href="images/icons.svg#icon-close-button"></use>
               </svg>
             </button>
-            <!-- <div class="order-form-container">
-
-              <p class="order-form-header">
-                Zostaw swoje dane w formularzu poniżej
-              </p>
-              <form class="order-form">
-                <label class="order-form-label">
-                  <span class="label-text">Imie</span>
-                  <input type="text" name="userName" class="text-input" />
-                </label>
-                <label class="order-form-label">
-                  <span class="label-text">Telefon</span>
-                  <input type="tel" name="telephone" class="text-input" />
-                </label>
-                <label class="order-form-label">
-                  <span class="label-text">Email</span>
-                  <input
-                    type="email"
-                    name="orderUserEmail"
-                    class="text-input"
-                  />
-                </label>
-                <label class="order-form-label">
-                  <span class="label-text">Komentarz</span>
-                  <textarea
-                    name="feedback"
-                    rows="5"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                </label>
-                <label class="rules-pp-accept-container">
-                  <input type="checkbox" class="rules-pp-accept" />
-                  Oświadczam iż akceptuje
-                  <a class="rules-highlight" href="rules">Regulamin</a> i
-                  <a class="rules-highlight" href="privacypolicy"
-                    >Politykę Prywatności</a
-                  >
-                </label>
-                <button type="submit" class="order-form-button">Wyślij</button>
-              </form>
-            </div> -->
             <form name="orderForm" class="order-form-containter">
               <h2>Zostaw swoje dane w formularzu poniżej</h2>
               <ul class="rules-accept-box">
                 <li>
                   <p>Imie</p>
-                  <input
-                    id="name"
-                    type="text"
-                    name="UserRealName"
-                    class="order-info"
-                  />
+                  <div class="testdiv">
+                    <input
+                      id="name"
+                      type="text"
+                      name="UserRealName"
+                      class="order-info"
+                    />
+                    <svg width="18px" height="18px" class="icon-person-black">
+                      <use href="images/icons.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
                   <label for="name"></label>
                 </li>
                 <li>
@@ -441,6 +405,9 @@
                     name="UserRealName"
                     class="order-info"
                   />
+                  <svg width="18px" height="18px" class="icon-person-black">
+                    <use href="images/icons.svg#icon-email-black"></use>
+                  </svg>
                   <label for="userEmail"></label>
                 </li>
                 <li>
@@ -451,6 +418,9 @@
                     name="UserTelephone"
                     class="order-info"
                   />
+                  <svg width="18px" height="18px" class="icon-person-black">
+                    <use href="images/icons.svg#icon-phone-black"></use>
+                  </svg>
                   <label for="userTelephone"></label>
                 </li>
                 <li class="user-feedback-box">
