@@ -2,7 +2,7 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <title>Zadanie domowe nr 6</title>
+    <title>Zadanie domowe nr 7</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -20,47 +20,49 @@
   </head>
   <body>
     <div class="container">
-      <header class="header-container">
-        <a class="logo" href="index.html"><span>Web</span>Studio</a>
-        <div class="header-container-left">
-          <ul class="navigator-container">
+      <header class="header">
+        <a class="logo" href="index.html"
+          ><span class="logo__title">Web</span>Studio</a
+        >
+        <div>
+          <ul class="navigation">
             <li>
-              <a class="header-link" href="/agency"
+              <a class="navigation__link" href="/agency"
                 ><span>Agencja</span>
-                <div class="underline"></div
+                <div class="navigation__link-underline"></div
               ></a>
             </li>
 
             <li>
-              <a class="header-link" href="portfolio.html"
+              <a class="navigation__link" href="portfolio.html"
                 ><span>Portfolio</span>
-                <div class="underline"></div
+                <div class="navigation__link-underline"></div
               ></a>
             </li>
             <li>
-              <a class="header-link" href="/contact"
+              <a class="navigation__link" href="/contact"
                 ><span>Kontakt</span>
-                <div class="underline"></div
+                <div class="navigation__link-underline"></div
               ></a>
             </li>
           </ul>
         </div>
-        <div class="header-container-right">
-          <ul class="contact-container">
+        <div>
+          <ul class="contacts">
             <li>
-              <a class="header-contact-element" href="mailto:info@example.com"
+              <a class="contacts__link" href="mailto:info@example.com"
                 ><svg width="16px" height="12px">
                   <use href="images/icons.svg#icon-envelope"></use>
                 </svg>
-                <span>info@example.com</span></a
+                <span class="contacts__text">info@example.com</span></a
               >
             </li>
             <li>
-              <a class="header-contact-element" href="tel:+48111111111"
+              <a class="contacts__link" href="tel:+48111111111"
                 ><svg width="16px" height="16px">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
-                <span>+48 111 111 111</span></a
+                <span class="contacts__text">+48 111 111 111</span></a
               >
             </li>
           </ul>
@@ -68,82 +70,95 @@
       </header>
 
       <main>
-        <div class="main-header-box section">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" data-modal-open>Zamów usługe</button>
+        <div class="main-header section">
+          <h1 class="main-header__title">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="main-header__button" type="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
 
         <ul class="first-section section">
-          <li class="first-section-content">
-            <svg class="icon-first-section" width="70px" height="70px">
+          <li class="first-section__item">
+            <svg class="first-section__image" width="70px" height="70px">
               <use href="images/icons.svg#icon-antenna"></use>
             </svg>
-            <h3>LOREM IPSUM</h3>
+            <h3 class="first-section__description">LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
             arcu sem. Sed non sodales dui. Interdum et malesuada
           </li>
-          <li class="first-section-content">
-            <svg class="icon-first-section" width="70px" height="70px">
+          <li class="first-section__item">
+            <svg class="first-section__image" width="70px" height="70px">
               <use href="images/icons.svg#icon-clock"></use>
             </svg>
-            <h3>LOREM IPSUM</h3>
+            <h3 class="first-section__description">LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
             arcu sem. Sed non sodales dui. Interdum et malesuada
           </li>
-          <li class="first-section-content">
-            <svg class="icon-first-section" width="70px" height="70px">
+          <li class="first-section__item">
+            <svg class="first-section__image" width="70px" height="70px">
               <use href="images/icons.svg#icon-diagram"></use>
             </svg>
-            <h3>LOREM IPSUM</h3>
+            <h3 class="first-section__description">LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
             arcu sem. Sed non sodales dui. Interdum et malesuada
           </li>
-          <li class="first-section-content">
-            <svg class="icon-first-section" width="70px" height="70px">
+          <li class="first-section__item">
+            <svg class="first-section__image" width="70px" height="70px">
               <use href="images/icons.svg#icon-astronaut"></use>
             </svg>
-            <h3>LOREM IPSUM</h3>
+            <h3 class="first-section__description">LOREM IPSUM</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
             arcu sem. Sed non sodales dui. Interdum et malesuada
           </li>
         </ul>
         <div class="second-section section">
-          <h2>Czym się zajmujemy</h2>
-          <div class="second-section-images">
-            <div class="aboutusimg-container">
+          <h2 class="second-section__title">Czym się zajmujemy</h2>
+          <div class="second-section__gallery">
+            <div class="second-section__item">
               <img
                 src="images/aboutusimg1.jpg"
                 alt="zdjęcie pokazujące programistę piszącego kod z adnotacją aplikacje komputerowe"
                 width="370"
                 height="294"
+                class="second-section__image"
               />
-              <div class="overlay-text"><span>aplikacje komputerowe</span></div>
+              <div class="second-section__description">
+                <span>aplikacje komputerowe</span>
+              </div>
             </div>
-            <div class="aboutusimg-container">
+            <div class="second-section__item">
               <img
                 src="images/aboutusimg2.jpg"
                 alt="Zdjęcie pokazujące tworzenie interfejsu użytkownika z adnotacją aplikacje mobilne"
                 width="370"
                 height="294"
+                class="second-section__image"
               />
-              <div class="overlay-text"><span>aplikacje mobilne</span></div>
+              <div class="second-section__description">
+                <span>aplikacje mobilne</span>
+              </div>
             </div>
-            <div class="aboutusimg-container">
+            <div class="second-section__item">
               <img
                 src="images/aboutusimg3.jpg"
                 alt="zdjęcie pokazujące palete kolorów z adnotacją rozwiązania graficzne"
                 width="370"
                 height="294"
+                class="second-section__image"
               />
-              <div class="overlay-text"><span>rozwiązania graficzne</span></div>
+              <div class="second-section__description">
+                <span>rozwiązania graficzne</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="third-section section">
-          <h2>Nasz zespół</h2>
-          <div class="third-section-team">
-            <figure class="figure-box">
+          <h2 class="third-section__title">Nasz zespół</h2>
+          <div class="third-section__gallery">
+            <figure class="third-section__item">
               <img
                 src="images/tm1.jpg"
                 alt="Product Designer"
@@ -151,33 +166,33 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
+                <h4 class="third-section__name">John Doe</h4>
                 Product Designer
               </figcaption>
-              <div class="third-section-icon-container">
+              <div class="third-section__socials">
                 <a href="https://instagram.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-instagram"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://twitter.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-twitter"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://facebook.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-facebook"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://linkedin.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -185,7 +200,7 @@
                 </a>
               </div>
             </figure>
-            <figure class="figure-box">
+            <figure class="third-section__item">
               <img
                 src="images/tm2.jpg"
                 alt="Frontend Developer"
@@ -193,33 +208,33 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
+                <h4 class="third-section__name">John Doe</h4>
                 Frontend Developer
               </figcaption>
-              <div class="third-section-icon-container">
+              <div class="third-section__socials">
                 <a href="https://instagram.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-instagram"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://twitter.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-twitter"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://facebook.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-facebook"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://linkedin.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -227,7 +242,7 @@
                 </a>
               </div>
             </figure>
-            <figure class="figure-box">
+            <figure class="third-section__item">
               <img
                 src="images/tm3.jpg"
                 alt="Marketing"
@@ -235,33 +250,33 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
+                <h4 class="third-section__name">John Doe</h4>
                 Marketing
               </figcaption>
-              <div class="third-section-icon-container">
+              <div class="third-section__socials">
                 <a href="https://instagram.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-instagram"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://twitter.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-twitter"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://facebook.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-facebook"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://linkedin.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -269,7 +284,7 @@
                 </a>
               </div>
             </figure>
-            <figure class="figure-box">
+            <figure class="third-section__item">
               <img
                 src="images/tm4.jpg"
                 alt="UI Designer"
@@ -277,33 +292,33 @@
                 height="260"
               />
               <figcaption>
-                <h4>John Doe</h4>
+                <h4 class="third-section__name">John Doe</h4>
                 UI Designer
               </figcaption>
-              <div class="third-section-icon-container">
+              <div class="third-section__socials">
                 <a href="https://instagram.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-instagram"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://twitter.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-twitter"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://facebook.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-facebook"></use>
                     </svg>
                   </button>
                 </a>
                 <a href="https://linkedin.com/">
-                  <button class="social-button">
+                  <button class="third-section__button">
                     <svg width="20px" height="20px">
                       <use href="images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -314,11 +329,11 @@
           </div>
         </div>
         <div class="fourth-section section">
-          <h2>Nasi klienci</h2>
-          <ul class="fourth-section-container">
+          <h2 class="fourth-section__title">Nasi klienci</h2>
+          <ul class="fourth-section__gallery">
             <li>
               <a href="client-site1">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-1"></use>
                   </svg>
@@ -327,7 +342,7 @@
             </li>
             <li>
               <a href="client-site2">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-2"></use>
                   </svg>
@@ -336,7 +351,7 @@
             </li>
             <li>
               <a href="client-site3">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-3"></use>
                   </svg>
@@ -345,7 +360,7 @@
             </li>
             <li>
               <a href="client-site4">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-4"></use>
                   </svg>
@@ -354,7 +369,7 @@
             </li>
             <li>
               <a href="client-site5">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-5"></use>
                   </svg>
@@ -363,7 +378,7 @@
             </li>
             <li>
               <a href="client-site6">
-                <button class="client-button">
+                <button class="fourth-section__button">
                   <svg width="106px" height="60px">
                     <use href="images/icons.svg#icon-group-6"></use>
                   </svg>
@@ -374,140 +389,151 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-window">
-            <button type="button" class="close-window-x" data-modal-close>
-              <svg width="18px" height="18px">
+            <button
+              type="button"
+              class="modal-window__button-close"
+              data-modal-close
+            >
+              <svg width="18px" height="18px" class="modal-window__image">
                 <use href="images/icons.svg#icon-close-button"></use>
               </svg>
             </button>
-            <form name="orderForm" class="order-form-containter">
-              <h2>Zostaw swoje dane w formularzu poniżej</h2>
-              <ul class="rules-accept-box">
-                <li>
-                  <p>Imie</p>
-                  <div class="testdiv">
-                    <input
-                      id="name"
-                      type="text"
-                      name="UserRealName"
-                      class="order-info"
-                    />
-                    <svg width="18px" height="18px" class="icon-person-black">
-                      <use href="images/icons.svg#icon-person-black"></use>
-                    </svg>
-                  </div>
+            <form name="orderForm" class="order-form">
+              <h2 class="order-form__title">
+                Zostaw swoje dane w formularzu poniżej
+              </h2>
+              <ul class="order-form__container">
+                <li class="order-form__item">
+                  <p class="order-form__description">Imie</p>
+                  <input
+                    id="name"
+                    type="text"
+                    name="UserRealName"
+                    class="order-form__input"
+                  />
+                  <svg width="18px" height="18px" class="order-form__image">
+                    <use href="images/icons.svg#icon-person-black"></use>
+                  </svg>
                   <label for="name"></label>
                 </li>
-                <li>
-                  <p>Email</p>
+                <li class="order-form__item">
+                  <p class="order-form__description">Email</p>
                   <input
                     id="userEmail"
                     type="email"
                     name="UserRealName"
-                    class="order-info"
+                    class="order-form__input"
                   />
-                  <svg width="18px" height="18px" class="icon-person-black">
+                  <svg width="18px" height="18px" class="order-form__image">
                     <use href="images/icons.svg#icon-email-black"></use>
                   </svg>
                   <label for="userEmail"></label>
                 </li>
-                <li>
-                  <p>Telefon</p>
+                <li class="order-form__item">
+                  <p class="order-form__description">Telefon</p>
                   <input
                     id="userTelephone"
                     type="tel"
                     name="UserTelephone"
-                    class="order-info"
+                    class="order-form__input"
                   />
-                  <svg width="18px" height="18px" class="icon-person-black">
+                  <svg width="18px" height="18px" class="order-form__image">
                     <use href="images/icons.svg#icon-phone-black"></use>
                   </svg>
                   <label for="userTelephone"></label>
                 </li>
-                <li class="user-feedback-box">
-                  <p>Komentarz</p>
+                <li class="order-form__item">
+                  <p class="order-form__description">Komentarz</p>
                   <textarea
                     id="userFeedback"
                     name="feedback"
                     rows="5"
                     placeholder="Wprowadź tekst"
-                    class="order-info-textarea"
+                    class="order-form__textarea"
                   ></textarea>
                   <label for="userFeedback"></label>
                 </li>
-                <li class="rules-checkbox-box">
+                <li>
                   <input
                     id="rules-accept"
                     type="checkbox"
                     name="rulesAcceptCheckbox"
                     value="true"
-                    class="rules-checkbox"
+                    class="order-form__rules"
                   />
                   <label for="rules-accept"
-                    ><span class="rules-information"
+                    ><span class="order-form__rules-text"
                       >Oświadczam iż akceptuje
-                      <a class="rules-highlight" href="rules">Regulamin</a> i
-                      <a class="rules-highlight" href="privacypolicy"
+                      <a class="order-form__rules-highlighted" href="rules"
+                        >Regulamin</a
+                      >
+                      i
+                      <a
+                        class="order-form__rules-highlighted"
+                        href="privacypolicy"
                         >Politykę Prywatności</a
                       ></span
                     ></label
                   >
                 </li>
               </ul>
-              <button type="submit" class="order-form-button">Wyślij</button>
+              <button type="submit" class="order-form__button">Wyślij</button>
             </form>
           </div>
         </div>
       </main>
-      <footer class="footer-container">
-        <div class="footer-content">
-          <ul class="footer-information">
-            <li class="footer-logo-container">
-              <a class="logo" href="index.html"
-                ><span>Web</span><span class="studio">Studio</span></a
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer__first-section">
+            <li class="footer__logo">
+              <a class="footer__logo-white" href="index.html"
+                ><span class="logo__title">Web</span>Studio</a
               >
             </li>
             <li>
-              <span class="footer-address"
+              <span class="footer__description-address"
                 >m. Warszawa, Aleje Jerozolimskie 21</span
               >
             </li>
             <li>
-              <a class="footer-contact" href="mailto:info@example.com"
+              <a
+                class="footer__description-contact"
+                href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a class="footer-contact" href="tel:+48111111111"
+              <a class="footer__description-contact" href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </li>
           </ul>
-          <div class="join-us-container">
-            <p>dołącz do nas</p>
-            <div class="join-us-icons-container">
+          <div class="footer__second-section">
+            <p class="footer__label">dołącz do nas</p>
+            <div class="footer__content">
               <a href="https://www.instagram.com/">
-                <button class="join-us-social-button">
+                <button class="footer__button-icon">
                   <svg width="20px" height="20px">
                     <use href="images/icons.svg#icon-instagram"></use>
                   </svg>
                 </button>
               </a>
               <a href="https://twitter.com/">
-                <button class="join-us-social-button">
+                <button class="footer__button-icon">
                   <svg width="20px" height="20px">
                     <use href="images/icons.svg#icon-twitter"></use>
                   </svg>
                 </button>
               </a>
               <a href="https://facebook.com/">
-                <button class="join-us-social-button">
+                <button class="footer__button-icon">
                   <svg width="20px" height="20px">
                     <use href="images/icons.svg#icon-facebook"></use>
                   </svg>
                 </button>
               </a>
               <a href="https://linkedin.com/">
-                <button class="join-us-social-button">
+                <button class="footer__button-icon">
                   <svg width="20px" height="20px">
                     <use href="images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -515,22 +541,22 @@
               </a>
             </div>
           </div>
-          <div class="signup-newsletter-container">
+          <div>
             <form
               name="newsletterSignup"
               autocomplete="on"
-              class="signup-newsletter-form"
+              class="footer__form"
             >
               <label>
-                <p>Zapisz się do newslettera</p>
+                <p class="footer__label">Zapisz się do newslettera</p>
                 <input
                   type="email"
                   name="email"
                   placeholder="E-mail"
-                  class="email-input"
+                  class="footer__input-email"
                 />
               </label>
-              <button type="submit" class="signup-newsletter-button">
+              <button type="submit" class="footer__button">
                 Zapisz się
                 <svg width="24px" height="24px">
                   <use href="images/icons.svg#icon-send"></use>
