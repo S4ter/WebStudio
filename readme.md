@@ -1,1 +1,1 @@
-https://s4ter.github.io/goit-markup-hw-06/
+https://s4ter.github.io/goit-markup-hw-07/
