@@ -4,7 +4,8 @@
   font-family: "Raleway", sans-serif;
   color: #000000;
   text-decoration: none;
-}
-.logo__title {
-  color: $secondary-blue;
+
+  &__title {
+    color: $secondary-blue;
+  }
 }
