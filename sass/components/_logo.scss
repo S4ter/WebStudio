@@ -1,9 +1,12 @@
 /* Header logo */
 .logo {
   font-size: 26px;
+  font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: #000000;
   text-decoration: none;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 
   &__title {
     color: $secondary-blue;
@@ -20,8 +23,7 @@
     text-decoration: none;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__logo {
     &-white {
       font-family: "Raleway";
@@ -35,6 +37,39 @@
     }
   }
   .logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $primary-black;
+    &__title {
+      color: $secondary-blue;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    &-white {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #fff;
+    }
+  }
+  .logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $primary-black;
     &__title {
       color: $secondary-blue;
     }
