@@ -27,3 +27,34 @@
   width: 270px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 768px) {
+  .first-section {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $third-grey;
+    gap: 30px;
+    margin: 0;
+  }
+  .first-section__item {
+    width: 450px;
+  }
+  .first-section__image {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  .first-section__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $primary-black;
+    text-align: center;
+  }
+}

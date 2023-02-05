@@ -9,3 +9,34 @@
     color: $secondary-blue;
   }
 }
+
+.footer__logo {
+  margin-bottom: 20px;
+
+  &-white {
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    &-white {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #fff;
+    }
+  }
+  .logo {
+    &__title {
+      color: $secondary-blue;
+    }
+  }
+}
