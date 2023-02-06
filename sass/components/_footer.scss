@@ -105,6 +105,44 @@
     cursor: pointer;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 60px 0px;
+
+    &__container {
+      width: 768px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  .footer__first-section {
+    text-align: center;
+  }
+  .footer__second-section {
+    text-align: center;
+  }
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__label {
+    text-align: center;
+  }
+  .footer__input-email {
+    margin-bottom: 20px;
+    width: 450px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer {
     background-color: $background;

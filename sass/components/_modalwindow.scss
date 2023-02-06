@@ -184,6 +184,65 @@
   border: 1px solid $secondary-blue;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .modal-window {
+    width: 450px;
+  }
+  .order-form__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 370px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: black;
+    padding-left: 30px;
+  }
+  .order-form__textarea {
+    resize: none;
+    width: 370px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: black;
+  }
+  .order-form__image {
+    position: relative;
+    right: 365px;
+    top: 5px;
+  }
+  .order-form__rules-highlighted {
+    color: $secondary-blue;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+  .order-form__rules-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: $third-grey;
+  }
+  .order-form__title {
+    width: 370px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .modal-window {
