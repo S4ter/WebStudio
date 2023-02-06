@@ -1,6 +1,10 @@
 /* Fourth section */
 .fourth-section {
   padding-left: 0;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin: auto;
+  }
 
   .fourth-section__title {
     font-weight: 700;
@@ -11,6 +15,11 @@
     color: $primary-black;
     margin-bottom: 50px;
     margin-top: 0;
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
   }
 
   .fourth-section__gallery {
@@ -23,6 +32,11 @@
     list-style: none;
     margin: 0;
     padding-bottom: 94px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      margin: auto;
+      padding-bottom: 60px;
+    }
   }
   .fourth-section__button {
     width: 170px;
@@ -83,41 +97,16 @@
 }
 
 @media screen and (max-width: 767px) {
-  .fourth-section {
-    max-width: 480px;
-    margin: auto;
-    .fourth-section__title {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 33px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $primary-black;
-      margin-bottom: 30px;
-      margin-top: 0;
-    }
-    .fourth-section__gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      padding: 0;
-      list-style: none;
-      margin: auto;
-      padding-bottom: 60px;
-    }
+  .fourth-section__gallery {
+  }
 
-    .fourth-section__button {
-      width: 210px;
-      height: 92px;
-      background-color: white;
-      padding: 0;
-      border: 1px solid #afb1b8;
-      border-radius: 5%;
-      fill: $social-icons;
-    }
+  .fourth-section__button {
+    width: 210px;
+    height: 92px;
+    background-color: white;
+    padding: 0;
+    border: 1px solid #afb1b8;
+    border-radius: 5%;
+    fill: $social-icons;
   }
 }
