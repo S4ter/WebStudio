@@ -5,6 +5,10 @@
     max-width: 480px;
     margin: auto;
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-width: 768px;
+    margin: auto;
+  }
 
   .fourth-section__title {
     font-weight: 700;
@@ -16,6 +20,11 @@
     margin-bottom: 50px;
     margin-top: 0;
     @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
       font-size: 28px;
       line-height: 33px;
       margin-bottom: 30px;
@@ -37,6 +46,11 @@
       margin: auto;
       padding-bottom: 60px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      flex-wrap: wrap;
+      margin: auto;
+      padding-bottom: 60px;
+    }
   }
   .fourth-section__button {
     width: 170px;
@@ -46,6 +60,14 @@
     border: 1px solid #afb1b8;
     border-radius: 5%;
     fill: $social-icons;
+    @media screen and (max-width: 767px) {
+      width: 210px;
+      height: 92px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 226px;
+      height: 92px;
+    }
   }
   .fourth-section__button:hover,
   .fourth-section__button:focus {
@@ -54,59 +76,5 @@
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .fourth-section {
-    max-width: 768px;
-    margin: auto;
-    .fourth-section__title {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 33px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $primary-black;
-      margin-bottom: 30px;
-      margin-top: 0;
-    }
-    .fourth-section__gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      padding: 0;
-      list-style: none;
-      margin: auto;
-      padding-bottom: 60px;
-    }
-
-    .fourth-section__button {
-      width: 226px;
-      height: 92px;
-      background-color: white;
-      padding: 0;
-      border: 1px solid #afb1b8;
-      border-radius: 5%;
-      fill: $social-icons;
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .fourth-section__gallery {
-  }
-
-  .fourth-section__button {
-    width: 210px;
-    height: 92px;
-    background-color: white;
-    padding: 0;
-    border: 1px solid #afb1b8;
-    border-radius: 5%;
-    fill: $social-icons;
   }
 }
