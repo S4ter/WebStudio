@@ -19,6 +19,12 @@
   top: 50%;
   left: 50%;
   border-radius: 4px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 450px;
+  }
 }
 .modal-window__button-close {
   position: absolute;
@@ -63,6 +69,12 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 370px;
+  }
 }
 .order-form__item {
   margin-bottom: 10px;
@@ -129,6 +141,12 @@
   letter-spacing: 0.01em;
   color: black;
   padding-left: 30px;
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .order-form__textarea {
@@ -142,6 +160,12 @@
   line-height: 14px;
   letter-spacing: 0.01em;
   color: black;
+  @media screen and (max-width: 767px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 370px;
+  }
 }
 .order-form__rules-highlighted {
   font-weight: 400;
@@ -150,6 +174,14 @@
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .order-form__rules-text {
   font-weight: 400;
@@ -157,6 +189,14 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .order-form__textarea::placeholder {
   font-weight: 400;
@@ -169,6 +209,12 @@
   position: relative;
   right: 440px;
   top: 5px;
+  @media screen and (max-width: 767px) {
+    right: 365px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    right: 365px;
+  }
 }
 .order-form__input:focus {
   outline: none;
@@ -183,123 +229,4 @@
   outline: none;
   border: 1px solid $secondary-blue;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .modal-window {
-    width: 450px;
-  }
-  .order-form__input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    width: 370px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: black;
-    padding-left: 30px;
-  }
-  .order-form__textarea {
-    resize: none;
-    width: 370px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: black;
-  }
-  .order-form__image {
-    position: relative;
-    right: 365px;
-    top: 5px;
-  }
-  .order-form__rules-highlighted {
-    color: $secondary-blue;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-  }
-  .order-form__rules-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    color: $third-grey;
-  }
-  .order-form__title {
-    width: 370px;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 12px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .modal-window {
-    width: 450px;
-  }
-  .order-form__input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    width: 370px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: black;
-    padding-left: 30px;
-  }
-  .order-form__textarea {
-    resize: none;
-    width: 370px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: black;
-  }
-  .order-form__image {
-    position: relative;
-    right: 365px;
-    top: 5px;
-  }
-  .order-form__rules-highlighted {
-    color: $secondary-blue;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-  }
-  .order-form__rules-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.03em;
-    color: $third-grey;
-  }
-  .order-form__title {
-    width: 370px;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 12px;
-  }
 }

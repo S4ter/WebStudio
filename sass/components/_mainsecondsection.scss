@@ -1,6 +1,12 @@
 /* Second section */
 .second-section {
   padding-left: 0;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .second-section__title {
   font-weight: 700;
@@ -46,15 +52,4 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .second-section {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .second-section {
-    display: none;
-  }
 }
