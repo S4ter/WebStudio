@@ -26,9 +26,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (max-width: 767px) and (min-resolution: 2dppx) {
     height: 400px;
     background: linear-gradient(
         to bottom,
@@ -40,9 +38,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
+  @media screen and (max-width: 767px) and (min-resolution: 3dppx) {
     height: 400px;
     background: linear-gradient(
         to bottom,
@@ -67,9 +63,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
     height: 400px;
     background: linear-gradient(
         to bottom,
@@ -81,9 +75,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 3dppx) {
     height: 400px;
     background: linear-gradient(
         to bottom,
